@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Netflix-Sans';
+    src: url(/Users/vanessapisati/Desktop/EPICODE/Epicode/compiti/M3/m3final_epicode/assets/netflix-sans-font/NetflixSans-Bold.otf) format("otf");
+}
+
+body {
+    margin: 0;
+    background-color: #141414;
+    padding-left: 3%;
+    padding-top: 1%;
+    width: 100%;
+}
+
+.nav-logo {
+    width: 7%;
+    height: auto;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.56);
+    font-size: 0.7em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link:hover {
+    color: white;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.56);
+    margin-right: 5%;
+}
+
+.navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.56);;
+}
+
+.right-section {
+    padding-right: 4%;
+    width: 170px;
+    justify-content: space-between;
+}
+
+.nav-icon {
+    color: white;
+    width: 15px;
+    height: auto;
+}
+
+.nav-gen {
+    color: white;
+    font-size: 0.6em;
+}
+
+.navbar-toggler {
+    width: 35px;
+    height: 25px;
+}
+
+.profile-picture {
+    width: 25px;
+    height: auto;
+}
+
+.profile-icon {
+    width: 9px;
+}
+
+.main-top {
+    margin-top: 2%;
+}
+
+h1 {
+    color: white;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    overflow: hidden;
+}
+
+.gen-menu {
+    background-color: black;
+    color: white;
+    padding: 1.5%;
+    font-size: 0.7em;
+}
+
+.list-view, .grid-view {
+    border: 1px solid #808080;
+    width: 30px;
+    height: 20px;
+}
+
+.visualize-icon {
+    color: #808080;
+    height: 11px;
+    width: auto;
+}
+
+.slider {
+    margin-top: 3%;
+}
+
+h4 {
+    color: white;
+    font-size: 0.9em;
+}
+
+.slide-container {
+    padding-left: 1%;
+
+}
+
+.movie-container {
+    transition: all 0.20s ease-in-out;
+}
+
+.movie-container:hover {
+    transform: scale(1.2);
+}
+
+/*.test {
+    display: none;
+    background-color: black;
+}
+
+.movie-container:hover .test {
+    display: block;
+}*/
+
+.card-image {
+    width: 100%;
+}
+
+footer {
+    margin-top: 8%;
+    height: auto;
+}
+
+.footer-menu li {
+    list-style: none;
+    font-size: 0.4em;
+    margin: 0.5%;
+    color: #808080;
+}
+
+.service button {
+    background-color: transparent;
+    color: #808080;
+    font-size: 0.4em;
+    border: 1px solid #808080;
+    margin-bottom: 2%;
+    padding: 3px 4px;
+}
+
+.service button:hover {
+    border: 1.5px solid white;
+    color: white;
+}
+
+.copyright p {
+    color: #808080;
+    font-size: 0.4em;
+    font-weight: 400;
+} 
+
+.social {
+    margin-bottom: 2%;
+}
+
+.footer-social {
+    width: 25px;
+    height: auto;
+    color: #808080;
+}
+
+@media screen and (max-width: 700px) {
+    .nav-logo {
+        width: 17%;
+        height: auto;
+    } 
+}

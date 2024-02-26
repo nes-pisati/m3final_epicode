@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Netflix</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="Netflix-logo" class="nav-logo">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-3 ">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recently Added</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My List</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="right-section d-flex  ">
+                    <div class="search d-flex justify-content-center align-items-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon nav-icon" viewBox="0 0 512 512"><path fill="currentColor" d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"/></svg>
+                    </div>
+                    <div class="kids d-flex justify-content-center align-items-center">
+                        <p class="nav-gen m-0 ">KIDS</p>
+                    </div>
+                    <div class="notification d-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon nav-icon" viewBox="0 0 512 512"><path fill="currentColor" d="M440.08 341.31c-1.66-2-3.29-4-4.89-5.93-22-26.61-35.31-42.67-35.31-118 0-39-9.33-71-27.72-95-13.56-17.73-31.89-31.18-56.05-41.12a3 3 0 01-.82-.67C306.6 51.49 282.82 32 256 32s-50.59 19.49-59.28 48.56a3.13 3.13 0 01-.81.65c-56.38 23.21-83.78 67.74-83.78 136.14 0 75.36-13.29 91.42-35.31 118-1.6 1.93-3.23 3.89-4.89 5.93a35.16 35.16 0 00-4.65 37.62c6.17 13 19.32 21.07 34.33 21.07H410.5c14.94 0 28-8.06 34.19-21a35.17 35.17 0 00-4.61-37.66zM256 480a80.06 80.06 0 0070.44-42.13 4 4 0 00-3.54-5.87H189.12a4 4 0 00-3.55 5.87A80.06 80.06 0 00256 480z"/></svg>
+                    </div>
+                    <div class="profile d-flex ">
+                        <img src="./assets/imgs/netflix-profile-pictures-5yup5hd2i60x7ew3.jpg" alt="profile-picture" class="profile-picture">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon nav-icon ms-1 profile-icon" viewBox="0 0 512 512"><path fill="currentColor" d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"/></svg>
+                    </div>
+                </div>
+                <button class="navbar-toggler d-flex justify-content-center align-items-center d-md-none " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              </nav>
+        </header>
+        <main>
+            <div class="main-top container-fluid  ">
+                <div class="row d-flex align-items-center justify-content-between ">
+                    <div class="left-wrapper d-flex col-6">
+                        <div class="title col-auto ">
+                            <h1>TV Shows</h1>
+                        </div>
+                        <div class="gens col-3 ms-2 ms-md-5 ">
+                            <select name="Genres" id="gen-menu" class="gen-menu">
+                                <option value="">Genres</option>
+                                <option value="Horror">Horror</option>
+                                <option value="Comedy">Comedy</option>
+                                <option value="Dramatic">Dramatic</option>
+                                <option value="Romantic">Romantic</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="right-visualize d-flex justify-content-end col-3 me-md-4 me-2 ">
+                        <div class="list-view d-flex justify-content-center align-items-center " >
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon visualize-icon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                        </div>
+                        <div class="grid-view d-flex justify-content-center align-items-center" >
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon visualize-icon" viewBox="0 0 512 512"><path  fill="currentColor" d="M204 240H68a36 36 0 01-36-36V68a36 36 0 0136-36h136a36 36 0 0136 36v136a36 36 0 01-36 36zM444 240H308a36 36 0 01-36-36V68a36 36 0 0136-36h136a36 36 0 0136 36v136a36 36 0 01-36 36zM204 480H68a36 36 0 01-36-36V308a36 36 0 0136-36h136a36 36 0 0136 36v136a36 36 0 01-36 36zM444 480H308a36 36 0 01-36-36V308a36 36 0 0136-36h136a36 36 0 0136 36v136a36 36 0 01-36 36z"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider container-fluid ">
+                <h4 class="col-auto ">Trending Now</h4>
+                <div class="slide-container row  d-flex flex-nowrap gap-1  ">
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/1.png" alt="" class="card-image">
+                        <!--<div class="test">
+                            <h6 style="color: white;">Lorem ipsum</h6>
+                            <p style="color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, error.</p>
+                        </div>-->
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/2.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/3.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/4.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/5.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/6.png" alt="" class="card-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider container-fluid ">
+                <h4 class="col-auto ">Watch it Again</h4>
+                <div class="slide-container row  d-flex flex-nowrap gap-1  ">
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/7.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/8.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/9.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/10.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/11.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/12.png" alt="" class="card-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider container-fluid mb-2 ">
+                <h4 class="col-auto ">New Releases</h4>
+                <div class="slide-container row  d-flex flex-nowrap gap-1  ">
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/13.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/14.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/15.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/16.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/1.png" alt="" class="card-image">
+                    </div>
+                    <div class="movie-container p-0 col-sm-6 col-md-4 col-lg-2">
+                        <img src="./assets/imgs/movies/2.png" alt="" class="card-image">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="container-fluid">
+            <div class="row d-flex justify-content-center ">
+                <div class="footer-wrapper col-8 col-md-8 p-0">
+                    <div class="social d-flex ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon footer-social " viewBox="0 0 512 512"><path fill="currentColor" d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon footer-social ms-3 " viewBox="0 0 512 512"><path fill="currentColor" d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"/><path fill="currentColor" d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" class="footer-social ms-3">    <path fill="currentColor" d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon footer-social ms-3" viewBox="0 0 512 512"><path fill="currentColor"d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9zM207 353.89v-196.5l145 98.2z"/></svg>
+                    </div>
+                    <div class="footer-menu container-fluid p-0">
+                        <ul class="row d-flex p-0">
+                            <li class="col-5 col-md-3">Audio and Subtitles</li>
+                            <li class="col-5 col-md-3">Audio Description</li>
+                            <li class="col-5 col-md-3">Help Center</li>
+                            <li class="col-5 col-md-3">Gift Cards</li>
+                            <li class="col-5 col-md-3">Media Center</li>
+                            <li class="col-5 col-md-3">Investor Relations</li>
+                            <li class="col-5 col-md-3">Jobs</li>
+                            <li class="col-5 col-md-3">Terms of Usa</li>
+                            <li class="col-5 col-md-3">Privacy</li>
+                            <li class="col-5 col-md-3">Legal Notices</li>
+                            <li class="col-5 col-md-3">Cookies Preferences</li>
+                            <li class="col-5 col-md-3">Corporate Information</li>
+                            <li class="col-5 col-md-3">Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <button>Service Code</button>
+                    </div>
+                    <div class="copyright">
+                        <p>© 1997-2019 Netflix, inc.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
